@@ -42,7 +42,7 @@ root_dir = "/blob/kmsw0eastau/data/hrrr/grib2/hrrr"
 all_date_dir = os.listdir(root_dir)
 all_date_dir =  sorted(all_date_dir, key=lambda x: datetime.datetime.strptime(x, '%Y%m%d'))
 
-all_date_dir = all_date_dir[200:400]
+all_date_dir = all_date_dir[400:500]
 for time_index in range(len(all_date_dir)):
     with open(f"./run_day/{all_date_dir[time_index]}.sh", "w") as file:  
         star_index = 0
